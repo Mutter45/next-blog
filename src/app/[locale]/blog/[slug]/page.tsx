@@ -14,18 +14,22 @@ interface BlogPostPageProps {
 
 export async function generateStaticParams() {
   const slugs = getAllPostSlugs()
-  return routing.locales.map((locale) => {
-    const params = []
+  const params = []
+
+  // 为每个 slug 和每个 locale 生成参数组合
+  for (const locale of routing.locales) {
     for (const slug of slugs) {
       params.push({ locale, slug })
     }
-    return params
-  })
+  }
+
+  return params
 }
 
 export default async function BlogPostPage({ params }: BlogPostPageProps) {
+  const { slug } = await params
+
   try {
-    const { slug } = await params
     const post = await getPostData(slug)
     return (
       <>
@@ -34,7 +38,8 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
         <Footer />
       </>
     )
-  } catch {
+  } catch (error) {
+    console.error('Error loading post:', error)
     notFound()
   }
 }

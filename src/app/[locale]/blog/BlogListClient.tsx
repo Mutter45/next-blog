@@ -92,7 +92,7 @@ export default function BlogListClient({ posts }: BlogListProps) {
                 <h2 className="text-2xl font-bold text-primary mb-4 line-clamp-2">{post.title}</h2>
 
                 {/* 摘要 */}
-                <p className="text-secondary mb-6 line-clamp-3">{post.excerpt}</p>
+                <p className="text-secondary mb-6 line-clamp-2">{post.excerpt}</p>
 
                 {/* 标签 */}
                 <div className="flex flex-wrap gap-2 mb-6">

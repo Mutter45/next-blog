@@ -23,8 +23,9 @@ export async function getSortedPostsData(): Promise<BlogPostMeta[]> {
       // 使用 gray-matter 解析帖子的元数据部分
       const matterResult = matter(fileContents)
 
-      // 计算阅读时间（假设每分钟200字）
-      const readingTime = Math.ceil(matterResult.content.split(' ').length / 200)
+      // 计算阅读时间（假设每分钟200字）- 使用更稳定的计算方式
+      const wordCount = matterResult.content.trim().split(/\s+/).length
+      const readingTime = Math.max(1, Math.round(wordCount / 200))
 
       // 将数据与 slug 组合
       return {
@@ -59,8 +60,9 @@ export async function getPostData(slug: string): Promise<BlogPost> {
   const processedContent = await remark().use(html).process(matterResult.content)
   const contentHtml = processedContent.toString()
 
-  // 计算阅读时间
-  const readingTime = Math.ceil(matterResult.content.split(' ').length / 200)
+  // 计算阅读时间 - 使用更稳定的计算方式
+  const wordCount = matterResult.content.trim().split(/\s+/).length
+  const readingTime = Math.max(1, Math.round(wordCount / 200))
 
   // 将数据与 slug 组合
   return {

@@ -54,7 +54,7 @@ export default function BlogPostClient({ post }: BlogPostProps) {
             <div className="flex flex-wrap items-center justify-center gap-6 text-secondary mb-8">
               <div className="flex items-center gap-2">
                 <Calendar size={20} />
-                <span>{new Date(post.date).toLocaleDateString('zh-CN')}</span>
+                <span>{new Date(post.date).toISOString().split('T')[0]}</span>
               </div>
               <div className="flex items-center gap-2">
                 <Clock size={20} />
