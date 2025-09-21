@@ -1,0 +1,67 @@
+{
+  "name": "next-blog",
+  "version": "0.1.0",
+  "description": "A blog built with Next.js and Tailwind CSS",
+  "keywords": [
+    "next",
+    "tailwind",
+    "blog"
+  ],
+  "author": "Mutter",
+  "license": "MIT",
+  "homepage": "https://github.com/Mutter45/next-blog",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --turbopack",
+    "build": "next build --turbopack",
+    "start": "next start",
+    "lint": "eslint",
+    "lint:fix": "eslint --fix",
+    "format": "prettier --write .",
+    "prepare": "husky",
+    "lint-staged": "lint-staged",
+    "commitlint": "commitlint",
+    "release": "standard-version"
+  },
+  "dependencies": {
+    "date-fns": "^4.1.0",
+    "framer-motion": "^12.23.12",
+    "gray-matter": "^4.0.3",
+    "lucide-react": "^0.544.0",
+    "next": "15.5.3",
+    "next-intl": "^4.3.8",
+    "react": "19.1.0",
+    "react-dom": "19.1.0",
+    "remark": "^15.0.1",
+    "remark-html": "^16.0.1"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^19.8.1",
+    "@commitlint/config-conventional": "^19.8.1",
+    "@eslint/eslintrc": "^3",
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "conventional-changelog-conventionalcommits": "^9.1.0",
+    "eslint": "^9",
+    "eslint-config-next": "15.5.3",
+    "eslint-config-prettier": "^10.1.8",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.1.6",
+    "postcss": "^8.5.6",
+    "prettier": "^3.6.2",
+    "standard-version": "^9.5.0",
+    "tailwindcss": "^4",
+    "typescript": "^5"
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": [
+      "eslint --fix",
+      "prettier --write"
+    ],
+    "*.{json,md,css,scss}": [
+      "prettier --write"
+    ]
+  }
+}

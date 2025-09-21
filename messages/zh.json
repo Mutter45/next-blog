@@ -1,0 +1,59 @@
+{
+  "nav": {
+    "home": "首页",
+    "blog": "博客",
+    "about": "关于",
+    "commits": "Commits",
+    "language": "EN/中文"
+  },
+  "home": {
+    "title": "代码与成长",
+    "subtitle": "记录学习历程，日常生活感想分享",
+    "startReading": "开始阅读",
+    "viewCode": "GitHub",
+    "leetcode": "LeetCode",
+    "leetcodeDesc": "记录算法刷题过程，分享解题思路和优化技巧",
+    "techLearning": "技术学习",
+    "techLearningDesc": "TypeScript、React、Node.js等前端技术学习笔记",
+    "codeCommits": "代码提交",
+    "codeCommitsDesc": "实时同步GitHub提交记录，展示编程活跃度",
+    "stats": {
+      "leetcode": "LeetCode题目",
+      "articles": "技术文章",
+      "commits": "持续记录",
+      "passion": "学习热情"
+    },
+    "footer": "© 2025 个人博客. 用 ❤️ 和 Next.js 构建"
+  },
+  "blog": {
+    "title": "技术博客",
+    "subtitle": "记录学习历程，分享技术心得",
+    "readMore": "阅读更多",
+    "noArticles": "暂无文章",
+    "noArticlesDesc": "还没有发布任何文章",
+    "backToList": "返回博客列表",
+    "share": "分享",
+    "readingTime": "分钟阅读",
+    "viewMore": "查看更多文章",
+    "shareArticle": "分享文章",
+    "thanks": "感谢阅读！如果这篇文章对你有帮助，欢迎分享给更多人。"
+  },
+  "commits": {
+    "title": "GitHub 提交记录",
+    "subtitle": "实时同步GitHub提交记录，展示编程活跃度",
+    "backToHome": "返回首页",
+    "totalCommits": "总提交数",
+    "activeDays": "活跃天数",
+    "techStack": "技术栈",
+    "techDistribution": "技术栈分布",
+    "contributionGraph": "最近一年贡献图",
+    "recentCommits": "最近提交",
+    "less": "较少",
+    "more": "更多"
+  },
+  "theme": {
+    "light": "浅色主题",
+    "dark": "深色主题",
+    "system": "跟随系统"
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "nav": {
+    "home": "Home",
+    "blog": "Blog",
+    "about": "About",
+    "commits": "Commits",
+    "language": "中文/EN"
+  },
+  "home": {
+    "title": "Code & Growth",
+    "subtitle": "Record your learning process and share your daily life thoughts",
+    "startReading": "Start Reading",
+    "viewCode": "GitHub",
+    "leetcode": "LeetCode",
+    "leetcodeDesc": "Record algorithm problem solving process, share solutions and optimization techniques",
+    "techLearning": "Tech Learning",
+    "techLearningDesc": "TypeScript, React, Node.js frontend technology learning notes",
+    "codeCommits": "Code Commits",
+    "codeCommitsDesc": "Real-time sync GitHub commit records, showcase programming activity",
+    "stats": {
+      "leetcode": "LeetCode Problems",
+      "articles": "Tech Articles",
+      "commits": "Days Recorded",
+      "passion": "Learning Passion"
+    },
+    "footer": "© 2025 Personal Blog. Built with ❤️ and Next.js"
+  },
+  "blog": {
+    "title": "Tech Blog",
+    "subtitle": "Record learning journey, share tech insights",
+    "readMore": "Read More",
+    "noArticles": "No Articles",
+    "noArticlesDesc": "No articles published yet",
+    "backToList": "Back to Blog List",
+    "share": "Share",
+    "readingTime": "min read",
+    "viewMore": "View More Articles",
+    "shareArticle": "Share Article",
+    "thanks": "Thanks for reading! If this article helps you, please share it with others."
+  },
+  "commits": {
+    "title": "GitHub Commit History",
+    "subtitle": "Real-time sync GitHub commit records, showcase programming activity",
+    "backToHome": "Back to Home",
+    "totalCommits": "Total Commits",
+    "activeDays": "Active Days",
+    "techStack": "Tech Stack",
+    "techDistribution": "Tech Stack Distribution",
+    "contributionGraph": "Contribution Graph (Last Year)",
+    "recentCommits": "Recent Commits",
+    "less": "Less",
+    "more": "More"
+  },
+  "theme": {
+    "light": "Light Theme",
+    "dark": "Dark Theme",
+    "system": "Follow System"
+  }
+}

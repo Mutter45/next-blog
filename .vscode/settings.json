@@ -1,0 +1,6 @@
+{
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "i18n-ally.localesPaths": ["messages", "src/lib/i18n"],
+  "cSpell.words": ["commitlint"]
+}
