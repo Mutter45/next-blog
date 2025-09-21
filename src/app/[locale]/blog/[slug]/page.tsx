@@ -3,18 +3,24 @@ import { notFound } from 'next/navigation'
 import BlogPostClient from './BlogPostClient'
 import Footer from '@/components/Footer'
 import Header from '@/components/Header'
+import { routing } from '@/i18n/routing'
 
 interface BlogPostPageProps {
   params: Promise<{
+    locale: string
     slug: string
   }>
 }
 
 export async function generateStaticParams() {
   const slugs = getAllPostSlugs()
-  return slugs.map((slug) => ({
-    slug,
-  }))
+  return routing.locales.map((locale) => {
+    const params = []
+    for (const slug of slugs) {
+      params.push({ locale, slug })
+    }
+    return params
+  })
 }
 
 export default async function BlogPostPage({ params }: BlogPostPageProps) {
